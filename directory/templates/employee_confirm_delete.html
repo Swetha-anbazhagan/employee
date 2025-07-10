@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Delete</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
+        .button { padding: 10px 20px; margin: 10px; border: none; cursor: pointer; }
+        .danger { background-color: #f44336; color: white; }
+        .cancel { background-color: #ccc; color: black; }
+    </style>
+</head>
+<body>
+    <h2>Are you sure you want to delete <strong>{{ employee.name }}</strong>?</h2>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="button danger">Yes, Delete</button>
+        <a href="{% url 'employee_list' %}" class="button cancel">Cancel</a>
+    </form>
+</body>
+</html>
