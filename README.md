@@ -70,5 +70,6 @@ def employee_delete(request,pk):
 
 **Delete**
 
-<img width="1917" height="1035" alt="image" src="https://github.com/user-attachments/assets/6803a64e-5691-4aea-b1c7-05e53ba629dd" />
+<img width="1917" height="1091" alt="image" src="https://github.com/user-attachments/assets/6c12de74-777f-418c-893f-b4fec446116e" />
+
 
